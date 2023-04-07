@@ -3,6 +3,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 const test = require('tape');
 const varuint = require('../lib/converter/varint');
 const varint_1 = require('./fixtures/varint');
+const Buffer = require('safe-buffer').Buffer;
 varint_1.fixtures.valid.forEach((fixture, i) => {
   test('valid encode #' + (i + 1), t => {
     t.same(varuint.encode(fixture.dec).toString('hex'), fixture.hex);

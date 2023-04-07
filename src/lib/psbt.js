@@ -4,6 +4,7 @@ const combiner_1 = require('./combiner');
 const parser_1 = require('./parser');
 const typeFields_1 = require('./typeFields');
 const utils_1 = require('./utils');
+const Buffer = require('safe-buffer').Buffer;
 class Psbt {
   constructor(tx) {
     this.inputs = [];

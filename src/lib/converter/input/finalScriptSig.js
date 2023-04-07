@@ -1,5 +1,6 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
+const Buffer = require('safe-buffer').Buffer;
 const typeFields_1 = require('../../typeFields');
 function decode(keyVal) {
   if (keyVal.key[0] !== typeFields_1.InputTypes.FINAL_SCRIPTSIG) {

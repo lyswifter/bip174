@@ -1,6 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 const varuint = require('../varint');
+const Buffer = require('safe-buffer').Buffer;
 const bip32Derivation = require('./bip32Derivation');
 const isValidBIP340Key = pubkey => pubkey.length === 32;
 function makeConverter(TYPE_BYTE) {

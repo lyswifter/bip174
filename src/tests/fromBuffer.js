@@ -3,6 +3,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 const tape = require('tape');
 const psbt_1 = require('../lib/psbt');
 const fromBuffer_1 = require('./fixtures/fromBuffer');
+const Buffer = require('safe-buffer').Buffer;
 class Blah {
   constructor(buf) {
     this.buf = buf;

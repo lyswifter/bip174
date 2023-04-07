@@ -1,5 +1,6 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
+const Buffer = require('safe-buffer').Buffer;
 function makeConverter(TYPE_BYTE) {
   function decode(keyVal) {
     if (keyVal.key[0] !== TYPE_BYTE) {

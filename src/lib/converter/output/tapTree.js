@@ -2,6 +2,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 const typeFields_1 = require('../../typeFields');
 const varuint = require('../varint');
+const Buffer = require('safe-buffer').Buffer;
 function decode(keyVal) {
   if (
     keyVal.key[0] !== typeFields_1.OutputTypes.TAP_TREE ||

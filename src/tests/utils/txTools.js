@@ -2,6 +2,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 const bitcoinjs_lib_1 = require('bitcoinjs-lib');
 const tools_1 = require('../../lib/converter/tools');
+const Buffer = require('safe-buffer').Buffer;
 function getDefaultTx(version = 1) {
   const TX = new Transaction(Buffer.from([1, 0, 0, 0, 0, 0, 0, 0, 0, 0]));
   TX.tx.version = version;

@@ -1,5 +1,6 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
+const Buffer = require('safe-buffer').Buffer;
 const range = n => [...Array(n).keys()];
 const isValidDERKey = pubkey =>
   (pubkey.length === 33 && [2, 3].includes(pubkey[0])) ||

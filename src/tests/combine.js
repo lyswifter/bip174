@@ -4,6 +4,7 @@ const tape = require('tape');
 const psbt_1 = require('../lib/psbt');
 const combine_1 = require('./fixtures/combine');
 const txTools_1 = require('./utils/txTools');
+const Buffer = require('safe-buffer').Buffer;
 for (const f of combine_1.fixtures) {
   tape('Test: ' + f.description, t => {
     const psbts = f.psbts.map(p =>

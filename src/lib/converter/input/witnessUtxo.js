@@ -3,6 +3,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 const typeFields_1 = require('../../typeFields');
 const tools_1 = require('../tools');
 const varuint = require('../varint');
+const Buffer = require('safe-buffer').Buffer;
 function decode(keyVal) {
   if (keyVal.key[0] !== typeFields_1.InputTypes.WITNESS_UTXO) {
     throw new Error(

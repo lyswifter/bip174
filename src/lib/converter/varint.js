@@ -1,5 +1,6 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
+const Buffer = require('safe-buffer').Buffer;
 // Number.MAX_SAFE_INTEGER
 const MAX_SAFE_INTEGER = 9007199254740991;
 function checkUInt53(n) {

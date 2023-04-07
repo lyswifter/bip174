@@ -1,6 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 const typeFields_1 = require('../../typeFields');
+const Buffer = require('safe-buffer').Buffer;
 const range = n => [...Array(n).keys()];
 function decode(keyVal) {
   if (keyVal.key[0] !== typeFields_1.GlobalTypes.GLOBAL_XPUB) {

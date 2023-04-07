@@ -3,6 +3,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 const tape = require('tape');
 const psbt_1 = require('../lib/psbt');
 const txTools_1 = require('./utils/txTools');
+const Buffer = require('safe-buffer').Buffer;
 tape('Test: add Input Output', t => {
   const psbt = new psbt_1.Psbt(txTools_1.getDefaultTx());
   psbt.addInput({

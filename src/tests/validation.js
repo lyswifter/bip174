@@ -4,6 +4,7 @@ const tape = require('tape');
 const combiner_1 = require('../lib/combiner');
 const converter_1 = require('../lib/converter');
 const txTools_1 = require('./utils/txTools');
+const Buffer = require('safe-buffer').Buffer;
 const b = hex => Buffer.from(hex, 'hex');
 tape('should not pass isPartialSig with invalid DER signature', t => {
   const data = {

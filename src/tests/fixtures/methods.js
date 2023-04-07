@@ -1,5 +1,6 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
+const Buffer = require('safe-buffer').Buffer;
 const b = h => Buffer.from(h, 'hex');
 const dummyPubkeys = [
   '03b1341ccba7683b6af4f1238cd6e97e7167d569fac47f1e48d47541844355bd46',

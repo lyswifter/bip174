@@ -4,6 +4,7 @@ const tape = require('tape');
 const psbt_1 = require('../lib/psbt');
 const methods_1 = require('./fixtures/methods');
 const txTools_1 = require('./utils/txTools');
+const Buffer = require('safe-buffer').Buffer;
 function run(f, typ) {
   tape(`check ${typ} method: ${f.method}`, t => {
     let func;

@@ -45,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/bitcoinjs/bip174/issues"
   },
-  "homepage": "https://github.com/bitcoinjs/bip174#readme"
+  "homepage": "https://github.com/bitcoinjs/bip174#readme",
+  "dependencies": {
+    "safe-buffer": "^5.2.1"
+  }
 }

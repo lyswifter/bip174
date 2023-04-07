@@ -4,6 +4,7 @@ const convert = require('../converter');
 const tools_1 = require('../converter/tools');
 const varuint = require('../converter/varint');
 const typeFields_1 = require('../typeFields');
+const Buffer = require('safe-buffer').Buffer;
 function psbtFromBuffer(buffer, txGetter) {
   let offset = 0;
   function varSlice() {

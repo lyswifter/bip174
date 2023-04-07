@@ -4,6 +4,7 @@ const tape = require('tape');
 const psbt_1 = require('../lib/psbt');
 const first_1 = require('./fixtures/first');
 const txTools_1 = require('./utils/txTools');
+const Buffer = require('safe-buffer').Buffer;
 for (const f of first_1.fixtures) {
   tape('Test: ' + f.description, t => {
     const parsed = psbt_1.Psbt.fromHex(

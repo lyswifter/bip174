@@ -2,6 +2,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 const convert = require('../converter');
 const tools_1 = require('../converter/tools');
+const Buffer = require('safe-buffer').Buffer;
 function psbtToBuffer({ globalMap, inputs, outputs }) {
   const { globalKeyVals, inputKeyVals, outputKeyVals } = psbtToKeyVals({
     globalMap,

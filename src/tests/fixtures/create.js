@@ -1,5 +1,6 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
+const Buffer = require('safe-buffer').Buffer;
 const b = hex => Buffer.from(hex, 'hex');
 exports.fixtures = [
   {

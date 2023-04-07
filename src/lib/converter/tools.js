@@ -1,6 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 const varuint = require('./varint');
+const Buffer = require('safe-buffer').Buffer;
 exports.range = n => [...Array(n).keys()];
 function reverseBuffer(buffer) {
   if (buffer.length < 1) return buffer;
